@@ -1,6 +1,7 @@
 % LaTeX resume using res.cls
 \documentclass[margin]{res}
-\usepackage{amssymb,amsmath,hyperref}
+\usepackage{amssymb,amsmath}
+\usepackage{hyperref}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}
 \usepackage{multicol}
@@ -11,8 +12,14 @@
 \renewcommand{\labelitemi}{\tiny$\blacksquare$}
 \usepackage[normalem]{ulem}
 
-\begin{document}
+% set up href options
+\hypersetup{
+  pdfnewwindow=true,
+  colorlinks=true,
+  urlcolor=[rgb]{0.5451, 0, 0}
+}
 
+\begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%                               Heading                            %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,7 +116,7 @@ UC Berkeley Graduate Fellowship 2013
 Aug 2013 -- May 2014 \\                                          \vspace{-4mm}
 \begin{itemize}                                         \itemsep1pt %\small
         \item    Formulated and implemented an algorithm to analyze exact reachability for skew-line needle planning in automated brachytherapy
-        \item    Published results in an article for the IEEE CASE 2014 Conference
+        \item    \href{http://www.decf.berkeley.edu/~gyang/paper2014}{Published results in an article for the IEEE CASE 2014 Conference}
 \end{itemize}
 \vspace{-2mm}
 
@@ -136,8 +143,8 @@ May -- Jul 2012 \\                                          \vspace{-4mm}
 June -- August 2010 \\                                          \vspace{-4mm}
 \begin{itemize}                                         \itemsep1pt 
         \item Built a model in R to simulate the dynamics of Johne's Disease in a U.S. dairy heard. Performed cost analysis comparing existing control strategies and a newly developed testing method
-        \item Published results in a paper for Journal of Biological Systems
-2013\end{itemize}
+        \item \href{http://www.worldscientific.com/doi/abs/10.1142/S021833901340010X}{Published results in a paper for Journal of Biological Systems}
+\end{itemize}
 \vspace{-2mm}
 
 
