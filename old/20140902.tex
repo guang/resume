@@ -1,0 +1,174 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+\usepackage{amssymb,amsmath,hyperref}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}
+\usepackage{multicol}
+\usepackage{ccfonts}
+%\setlength{\textwidth}{6.5in} % set width of text portion
+%\setlength{\oddsidemargin}{-0.25in}
+\usepackage[left=.3in,top=0.6in,right=2in,bottom=.02in]{geometry}
+\renewcommand{\labelitemi}{\tiny$\blacksquare$}
+\usepackage[normalem]{ulem}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%                               Heading                            %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\moveleft.5\hoffset\centerline{\huge \bf GUANG YANG}            % Center the name over the entire width of resume:
+\moveleft\hoffset\vbox{\hrule width 7.3in height 1pt}         % Draw a horizontal line the whole width of resume:
+\address{2547 Piedmont Avenue \#1\\Berkeley, CA 94704} % address begins here
+\address{ \hfill \url{http://www.decf.berkeley.edu/~gyang} \\ \hfill gy8@berkeley.edu}
+\begin{resume}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%                             Education                           %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{EDUCATION}
+{\bf UNIVERSITY OF CALIFORNIA, BERKELEY,} Berkeley, CA \\
+{\em Candidate for M.S. in Industrial Engineering \& Operations Research }
+\hfill Expected -- Dec 2014\\                                     \vspace{-4mm}
+\begin{itemize}
+\item 
+\textit{Coursework (current*)}: Statistical Computing*, Information Organization and Retrieval*, Applied Stochastic Processes, Learning and Optimization, Mathematical Programming, Supply Chain and Logistics Management, Financial Engineering
+\item
+UC Berkeley Graduate Fellowship 2013
+\end{itemize}
+\vspace{-2mm}
+
+{\bf RICE UNIVERSITY,} Houston, TX \\
+{\em B.A. in Computational and Applied Mathematics (CAAM)}
+\hfill May 2013\\                                     \vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt
+        \item \textit{Coursework}: Numerical Analysis, Neural Machine Learning, Optimization Theory, Applied Matrix Analysis, Complex Analysis, Probability and Statistics
+\end{itemize}
+\vspace{-2mm}
+       
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%                             Awards                              %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{AWARDS}
+%\vspace{3mm}
+%\begin{itemize}
+%\item
+%UC Berkeley Graduate Fellowship 2013
+%\item
+%CAAM-Chevron Undergraduate Research Prize 2013
+%\item
+%Meritorious winner, COMAP Mathematical Contest in Modeling 2011
+%\item
+%1st Place, Rice ASME Engineering Design Competitions 2011, 2012
+%\item
+%NSF, Research Experience for Undergraduates 
+%\begin{itemize}
+%\vspace{-1.9mm}
+%\item 
+%Claremont Colleges, Claremont, CA (summer 2011)
+%\vspace{-1.5mm}
+%\item
+%National Institute for Mathematical and Biological Synthesis, Knoxville, TN (summer 2010)
+%\end{itemize}
+%\end{itemize}
+%
+%\vspace{-4mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%                              Technical                           %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{TECHNICAL}
+
+% first column
+\begin{minipage}[t]{0.5\textwidth}
+\begin{itemize}
+ \item 
+    \textit{Data Processing}: Python, SQL, shell  
+\item
+\textit{Modeling}: MATLAB, R, AMPL
+\end{itemize}
+\end{minipage}
+%second column
+\begin{minipage}[t]{0.5\textwidth}
+\begin{itemize}
+\item
+    \textit{Visualization}: Javascript (d3.js)
+\item
+    \textit{Other}: git, vim, \LaTeX, HTML, CSS
+\end{itemize}
+\end{minipage}
+\vspace{-2mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%                          Research Experiences                    %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{RESEARCH}
+{\bf BERKELEY COMPUTATIONAL OPTIMIZATION LAB,} Berkeley, CA \\
+{\em Graduate Student Research (Advisor: Dr Alper Atamt\"urk)} \hfill
+Aug 2013 -- May 2014 \\                                          \vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt %\small
+        \item    Formulated and implemented an algorithm to analyze exact reachability for skew-line needle planning in automated brachytherapy
+        \item    Published results in an article for the IEEE CASE 2014 Conference
+\end{itemize}
+\vspace{-2mm}
+
+{\bf TEXAS CHILDREN'S HOSPITAL HEART CENTER,} Houston, TX \\
+{\em CAAM Senior Design (Advisors: Drs Mark Embree, Thomas Callaghan)} \hfill
+Aug 2012 -- May 2013 \\                                          \vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt %\small
+        \item  Developed a MATLAB GUI that extracts cardiac pressure gradients from echocardiogram data using smoothing splines and simplified Navier-Stokes equation 
+        \item  Presented findings to the Chief of Pediatric Cardiology, Dr Daniel Penny, at TCH
+\end{itemize}
+\vspace{-2mm}
+
+{\bf RICE UNIVERSITY,} Houston, TX \\
+{\em NSF, VIGRE Summer Internship (Advisor: Dr Wotao Yin)}    \hfill
+May -- Jul 2012 \\                                          \vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt 
+        \item  Applied the machine learning method, Regularized Dual Averaging, to classify electroencephalogram  recordings of patients performing a visual categorization task
+        \item Awarded CAAM-Chevron Undergraduate Research Prize
+2013\end{itemize}
+\vspace{-2mm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%                          Teaching Experiences                    %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{TEACHING}
+{\bf UC BERKELEY SCHOOL OF INFORMATION} Berkeley, CA \\
+{\em Teaching Assistant} \hfill
+June 2014 -- August 2014 \\                                          \vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt %\small
+        \item   'Exploring and Analyzing Data', part of the Master of Information and Data Science program
+        \item   'Introduction to High Level Programming', an introductory course to Python
+\end{itemize}
+\vspace{-2mm}
+
+{\bf RICE UNIVERSITY} Houston, TX \\
+{\em Head Academic Fellow (Will Rice College)} \hfill
+August 2012 -- May 2013 \\                                          \vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt %\small
+        \item   Led 25+ Academic Fellows in providing academic assistance to underclassmen and organizing events to stimulate the intellectual environment
+\end{itemize}
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%                          Publications                            %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PUBLICATION}
+\begin{itemize}                                                 \itemsep1pt
+        \item   A.\ Garg, T.\ Siauw, \textbf{G.\ Yang}, S.\ Patil, A.\ Cunha, I.\ Hsu, J.\ Pouliot, A.\ Atamt\"urk, K.\ Goldberg. \textit{Exact Reachability Analysis for Planning Skew-Line Needle Arrangements for Automated Brachytherapy}. IEEE International Conference on Automation Science and Engineering, 2014.
+        \item  T.\ Massaro, S.\ Lenhart, M.\ Spence, C.\ Drakes, \textbf{G.\ Yang}, F.\ Agusto, R.\ Johnson, B.\ Whitlock, A.\ Wadhwa, S.\ Eda. ``\emph{Modeling for Cost Analysis of Johne's Disease Control Based on EVELISA Testing}''. Journal of Biological Systems 21, no. 04, 2013.
+\end{itemize}
+\vspace{-2mm}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %%%%%%%                         Leadership                              %%%%%%
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{LEADERSHIP}
+% \begin{itemize}                                                 \itemsep1pt
+%         \item   President, Rice Table Tennis Club. Organized the campus-wide 2012 IEW Tournament
+% \end{itemize}
+
+\end{resume}
+\end{document}
