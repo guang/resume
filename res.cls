@@ -40,7 +40,7 @@
 %
 %   overlapped	the section titles overlap the body text (default)
 %
-%   margin	the section titles are to the left of the body text
+%   geomargin	the section titles are to the left of the body text
 %		
 %   11pt	use 11 point fonts instead of 10 point fonts
 %
@@ -189,13 +189,13 @@
 \LoadClassWithOptions{article}
 
 \newif\if@line
-\newif\if@margin
+\newif\if@geomargin
 
 \DeclareOption{line}{\@linetrue}
 \DeclareOption{centered}{\@linefalse}
 
-\DeclareOption{margin}{\@margintrue}
-\DeclareOption{overlapped}{\@marginfalse}
+\DeclareOption{geomargin}{\@geomargintrue}
+\DeclareOption{overlapped}{\@geomarginfalse}
 
 \ExecuteOptions{overlapped,centered}
 \ProcessOptions\relax
@@ -442,7 +442,7 @@
 \let\@@section\relax
 \def\ds@overlapped{\ifx\@@section\relax\newsectionwidth{0.5in}\let
   \@@section\unboxed@sectiontitle\fi}
-\def\ds@margin{\ifx\@@section\relax\newsectionwidth{1.3in}\let
+\def\ds@geomargin{\ifx\@@section\relax\newsectionwidth{1.3in}\let
   \@@section\boxed@sectiontitle\fi}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -460,7 +460,7 @@
 %\input article.sty
 
 \if@line\ds@line\else\ds@centered\fi
-\if@margin\ds@margin\else\ds@overlapped\fi
+\if@geomargin\ds@geomargin\else\ds@overlapped\fi
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
