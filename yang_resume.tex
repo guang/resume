@@ -25,7 +25,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \moveleft.5\hoffset\centerline{\huge \bf GUANG YANG}            % Center the name over the entire width of resume:
 \moveleft\hoffset\vbox{\hrule width 7.3in height 1pt}         % Draw a horizontal line the whole width of resume:
-\address{2547 Piedmont Avenue \#1\\Berkeley, CA 94704} % address begins here
+\address{\url{http://www.github.com/gy8} \\Berkeley, CA} % address begins here
 \address{ \hfill \url{http://www.decf.berkeley.edu/~gyang} \\ \hfill gy8@berkeley.edu}
 \begin{resume}
 
@@ -34,24 +34,25 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{EDUCATION}
 {\bf UNIVERSITY OF CALIFORNIA, BERKELEY,} Berkeley, CA \\
-{\em Candidate for M.S. in Industrial Engineering \& Operations Research }
-\hfill Expected -- Dec 2014\\                                     \vspace{-4mm}
+{\em M.S. in Industrial Engineering \& Operations Research }
+\hfill Dec 2014\\                                     \vspace{-4mm}
 \begin{itemize}
-\item 
-\textit{Coursework (current*)}: Intro to Data Science*, Statistical Computing*, Applied Stochastic Processes, Learning and Optimization, Mathematical Programming, Supply Chain and Logistics Management, Financial Engineering
-\item
-UC Berkeley Graduate Fellowship 2013
+  \item \textit{Coursework}: Statistical Computing, Applied Stochastic Processes,
+    Learning and Optimization, Mathematical Programming, Supply Chain and Logistics
+    Management, Financial Engineering
+  \item Awarded UC Berkeley Graduate Fellowship 2013
 \end{itemize}
-\vspace{-2mm}
+\vspace{-1mm}
 
 {\bf RICE UNIVERSITY,} Houston, TX \\
 {\em B.A. in Computational and Applied Mathematics (CAAM)}
 \hfill May 2013\\                                     \vspace{-4mm}
 \begin{itemize}                                         \itemsep1pt
-        \item \textit{Coursework}: Numerical Analysis, Neural Machine Learning, Optimization Theory, Applied Matrix Analysis, Complex Analysis, Probability and Statistics
+  \item \textit{Coursework}: Numerical Analysis, Neural Machine Learning, Optimization
+    Theory, Applied Matrix Analysis, Complex Analysis, Probability and Statistics
 \end{itemize}
-\vspace{-2mm}
-       
+\vspace{-1mm}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%                             Awards                              %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -86,88 +87,101 @@ UC Berkeley Graduate Fellowship 2013
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{TECHNICAL}
 
-% first column
-\begin{minipage}[t]{0.5\textwidth}
+% %%%%% Two Column Format %%%%%
+% % first column
+% \begin{minipage}[t]{0.5\textwidth}
+% \begin{itemize}
+%   \item \textit{Languages}: Python, Scala, Java, Ruby, Unix
+%   \item \textit{Mathematical}: MATLAB, R, AMPL
+%   \item \textit{Tools}: git, vim, \LaTeX
+% \end{itemize}
+% \end{minipage}
+% %second column
+% \begin{minipage}[t]{0.5\textwidth}
+% \begin{itemize}
+%   \item \textit{Databases}: MySQL, PostgreSQL, HBase
+%   \item \textit{Compute Frameworks}: MapReduce, Spark
+%   \item \textit{Funsies}: Ruby on Rails, d3.js, HTML, CSS
+% \end{itemize}
+% \end{minipage}
+% \vspace{-1mm}
+
+% %%%%% One Column Format %%%%%
 \begin{itemize}
- \item 
-    \textit{Processing}: Python, SQL, Unix
-\item
-\textit{Modeling}: MATLAB, R, AMPL
+  \item \textit{Languages}: Python, Scala, Java, Ruby, Unix, MATLAB, R, AMPL
+  \item \textit{Data Pipelining}: Kafka, Hadoop, Spark, Cassandra, MySQL
+  \item \textit{Funsies}: git, Ruby on Rails, d3.js, HTML, CSS, vim, \LaTeX
 \end{itemize}
-\end{minipage}
-%second column
-\begin{minipage}[t]{0.5\textwidth}
-\begin{itemize}
-\item
-    \textit{Presentation}: \LaTeX, d3.js, HTML, CSS
-\item
-    \textit{Tools}: git, vim
-\end{itemize}
-\end{minipage}
-\vspace{-2mm}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%                          Research Experiences                    %%%%%%
+%%%%%%                          Experiences                             %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{RESEARCH}
+\section{EXPERIENCE}
+
+{\bf INSIGHT DATA SCIENCE,} Palo Alto, CA \\
+{\em Data Engineering Fellow} \hfill
+Jan 2015 -- Present \\                                          \vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt %\small
+  \item Developed a pipeline to provide game insights from Starcraft II\(^\copyright\)
+     replay files.
+  \item Gained experience in large scale distributed data architectures through training,
+    mentorship and projects using Kafka, Spark, Cassandra, and Hadoop ecosystem tools.
+\end{itemize}
+\vspace{-1mm}
+
+{\bf UC BERKELEY SCHOOL OF INFORMATION,} Berkeley, CA \\
+{\em Teaching Assistant} \hfill
+Jun -- Dec 2014 \\                                          \vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt %\small
+  \item 'Exploring and Analyzing Data', part of the Master of Information and Data
+    Science program
+  \item  \href{https://github.com/gy8/project_auto-grading}
+    {Developed a semi-automatic grading program in Python}
+\end{itemize}
+\vspace{-1mm}
+
 {\bf BERKELEY COMPUTATIONAL OPTIMIZATION LAB,} Berkeley, CA \\
-{\em Graduate Student Research (Advisor: Dr Alper Atamt\"urk)} \hfill
+{\em Graduate Student Research} \hfill
 Aug 2013 -- May 2014 \\                                          \vspace{-4mm}
 \begin{itemize}                                         \itemsep1pt %\small
         \item    Formulated and implemented an algorithm to analyze exact reachability for skew-line needle planning in automated brachytherapy
         \item    \href{http://www.decf.berkeley.edu/~gyang/paper2014.pdf}{Published results in an article for the IEEE CASE 2014 Conference}
 \end{itemize}
-\vspace{-2mm}
-
-{\bf TEXAS CHILDREN'S HOSPITAL HEART CENTER,} Houston, TX \\
-{\em CAAM Senior Design (Advisors: Drs Mark Embree, Thomas Callaghan)} \hfill
-Aug 2012 -- May 2013 \\                                          \vspace{-4mm}
-\begin{itemize}                                         \itemsep1pt %\small
-        \item  Developed a MATLAB GUI that extracts cardiac pressure gradients from echocardiogram data using smoothing splines and simplified Navier-Stokes equation 
-        \item  Presented findings to the Chief of Pediatric Cardiology, Dr Daniel Penny, at TCH
-\end{itemize}
-\vspace{-2mm}
+\vspace{-1mm}
 
 {\bf RICE UNIVERSITY,} Houston, TX \\
-{\em NSF, VIGRE Summer Internship (Advisor: Dr Wotao Yin)}    \hfill
+{\em NSF, VIGRE Summer Internship}    \hfill
 May -- Jul 2012 \\                                          \vspace{-4mm}
 \begin{itemize}                                         \itemsep1pt 
         \item  Applied the machine learning method, Regularized Dual Averaging, to classify electroencephalogram  recordings of patients performing a visual categorization task
         \item Awarded CAAM-Chevron Undergraduate Research Prize
-2013\end{itemize}
-\vspace{-2mm}
+\end{itemize}
+\vspace{-3mm}
+
+{\em Head Academic Fellow (Will Rice College)} \hfill
+Aug 2012 -- May 2013 \\                                          \vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt %\small
+        \item   Led 25+ Academic Fellows in providing academic assistance to underclassmen and organizing events to stimulate the intellectual environment
+\end{itemize}
+\vspace{-1mm}
 
 {\bf NATIONAL INSTITUTE FOR MATHEMATICAL AND BIOLOGICAL SYNTHESIS,} Knoxville, TN \\
 {\em NSF, Research Experience for Undergraduates}    \hfill
-June -- August 2010 \\                                          \vspace{-4mm}
+Jun -- Aug 2010 \\                                          \vspace{-4mm}
 \begin{itemize}                                         \itemsep1pt 
         \item Built a model in R to simulate the dynamics of Johne's Disease in a U.S. dairy heard. Performed cost analysis comparing existing control strategies and a newly developed testing method
         \item \href{http://www.worldscientific.com/doi/abs/10.1142/S021833901340010X}{Published results in a paper for Journal of Biological Systems}
 \end{itemize}
-\vspace{-2mm}
+\vspace{-1mm}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%                          Teaching Experiences                    %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{TEACHING}
-{\bf UC BERKELEY SCHOOL OF INFORMATION} Berkeley, CA \\
-{\em Teaching Assistant} \hfill
-June 2014 -- Present \\                                          \vspace{-4mm}
-\begin{itemize}                                         \itemsep1pt %\small
-        \item   'Exploring and Analyzing Data', part of the Master of Information and Data Science program
-        \item   'Introduction to High Level Programming', an introductory course to Python in the summer
-\end{itemize}
-\vspace{-2mm}
 
-{\bf RICE UNIVERSITY} Houston, TX \\
-{\em Head Academic Fellow (Will Rice College)} \hfill
-August 2012 -- May 2013 \\                                          \vspace{-4mm}
-\begin{itemize}                                         \itemsep1pt %\small
-        \item   Led 25+ Academic Fellows in providing academic assistance to underclassmen and organizing events to stimulate the intellectual environment
-\end{itemize}
-\vspace{-2mm}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%                          Publications                            %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -177,6 +191,7 @@ August 2012 -- May 2013 \\                                          \vspace{-4mm
 %         \item  T.\ Massaro, S.\ Lenhart, M.\ Spence, C.\ Drakes, \textbf{G.\ Yang}, F.\ Agusto, R.\ Johnson, B.\ Whitlock, A.\ Wadhwa, S.\ Eda. ``\emph{Modeling for Cost Analysis of Johne's Disease Control Based on EVELISA Testing}''. Journal of Biological Systems 21, no. 04, 2013.
 % \end{itemize}
 % \vspace{-2mm}
+
 
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%                         Leadership                              %%%%%%
