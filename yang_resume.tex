@@ -2,7 +2,6 @@
 \documentclass[geomargin]{res}
 \usepackage{amssymb,amsmath}
 \usepackage{hyperref}
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}
 \usepackage{multicol}
 \usepackage{ccfonts}
@@ -11,6 +10,9 @@
 \usepackage[left=.3in,top=0.6in,right=2in,bottom=.02in]{geometry}
 \renewcommand{\labelitemi}{\tiny$\blacksquare$}
 \usepackage[normalem]{ulem}
+\usepackage[familydefault,regular]{Chivo} %% Option 'familydefault' only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 
 % set up href options
 \hypersetup{
@@ -25,7 +27,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \moveleft.5\hoffset\centerline{\huge \bf GUANG YANG}            % Center the name over the entire width of resume:
 \moveleft\hoffset\vbox{\hrule width 7.3in height 1pt}         % Draw a horizontal line the whole width of resume:
-\address{\href{https://www.github.com/guang}{www.github.com/guang} \\San Mateo, CA} % address begins here
+\address{\href{https://www.github.com/guang}{www.github.com/guang} \\Sunnyvale, CA} % address begins here
 \address{ \hfill \href{https://www.linkedin.com/in/gyang8}{www.linkedin.com/in/gyang8} \\ \hfill garry.yangguang@gmail.com}
 \begin{resume}
 
@@ -33,28 +35,33 @@
 %%%%%%                          Experiences                             %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{EXPERIENCE}
-{\bf MYTHIC, INC,} Redwood City, CA \\
+{\bf Lumos AI,} San Francisco, CA \\
+{\em Founder} \hfill
+Jan 2020 -- Present \\ 
+Lumos is a cost observability platform that helps companies use cloud infrastructure more efficiently.\\
+\vspace{-4mm}
+\begin{itemize}                                         \itemsep1pt %\small
+  \item Signed a \$2B unicorn as a design partner
+  \item Architected, built and delivered MVP that processes TBs of data from various sources, leveraging Spark, Kubernetes, Superset and AWS
+  \item Incubated by the Insight Founders Program
+\end{itemize}
+\vspace{-1mm}
+
+
+{\bf Mythic,} Redwood City, CA \\
 {\em Senior Deep Learning Engineer} \hfill
-Sep 2018 -- Present \\
+Sep 2018 -- Jan 2020 \\
 Mythic is creating first-of-its-kind mixed signal chip to speed up neural network inference on the edge. As part of the software team:\\
 \vspace{-4mm}
 \begin{itemize}                                         \itemsep1pt %\small
-  \item Developing Keras-based quantization tool that models and mitigates hardware effects during training
-  \item Improving in-house Single Shot Multibox Detector (SSD) customized for our hardware
+  \item Developed quantization library for users to model and mitigate hardware effects during model training
+  \item Improved in-house Single Shot Multibox Detector (SSD) in Keras/Python customized for our hardware
   \item Built a large labeled video dataset ($>$5M annotations) by creating specs, working with contractors, and setting up data ingestion/processing
 \end{itemize}
 \vspace{-1mm}
 
-{\bf INSIGHT DATA SCIENCE,} Palo Alto, CA \\
-{\em Artificial Intelligence Fellow} \hfill
-Jun 2018 -- Aug 2018 \\                                          \vspace{-4mm}
-\begin{itemize}                                         \itemsep1pt %\small
-  \item Building an end-to-end system that changes the style of the input voice data using neural networks, kubernetes, and AWS
 
-\end{itemize}
-\vspace{-1mm}
-
-{\bf KOMODO HEALTH,} San Francisco, CA \\
+{\bf Komodo Health,} San Francisco, CA \\
 {\em Data Engineer} \hfill
 Mar 2015 -- May 2017 \\
 As employee \#3, I have had the opportunity to add value in different parts of the engineering stack, from scratch: \\                                          \vspace{-4mm}
@@ -64,7 +71,7 @@ As employee \#3, I have had the opportunity to add value in different parts of t
 
   \item Led implementation of internal services (containerized Flask APIs deployed on Kubernetes) that improve transparency (domain-knowledge driven data metrics tracking) and automation (config and metadata tracking)
 
-  \item Built and maintained the data infrastructure (AWS, Spark, Airflow, internal services) that support the data team (13+ developers), leveraging container technologies (Kubernetes, Docker)
+  \item Built and maintained the data infrastructure (AWS, Spark, Airflow, internal services) that supports the data team (13+ devs), leveraging containers (Kubernetes, Docker)
 
   \item Worked with architect and product managers to define requirements and roadmap for scalability of data deployment, data ingestion and internal tooling.
 
@@ -81,16 +88,6 @@ As employee \#3, I have had the opportunity to add value in different parts of t
 %   \item   Leveraged distributed data tools, such as Kafka, Spark Cassandra, and Hadoop ecosystem tools.
 % \end{itemize}
 % \vspace{-1mm}
-
-{\bf BERKELEY COMPUTATIONAL OPTIMIZATION LAB,} Berkeley, CA \\
-{\em Graduate Student Researcher} \hfill
-Aug 2013 -- May 2014 \\                                          \vspace{-4mm}
-\begin{itemize}                                         \itemsep1pt %\small
-        \item    Formulated and implemented an algorithm to analyze exact reachability for skew-line needle planning in automated brachytherapy
-        \item    \href{http://ieeexplore.ieee.org/abstract/document/6899376/}{Published results in an article for the IEEE CASE 2014 Conference}
-\end{itemize}
-\vspace{-1mm}
-
 
 % {\bf NATIONAL INSTITUTE FOR MATHEMATICAL AND BIOLOGICAL SYNTHESIS,} Knoxville, TN \\
 % {\em NSF, Research Experience for Undergraduates}    \hfill
@@ -139,7 +136,7 @@ Aug 2013 -- May 2014 \\                                          \vspace{-4mm}
 % %%%%% One Column Format %%%%%
 \begin{itemize}
   \item \textit{Languages}: Python, SQL, shell
-  \item \textit{Frameworks}: Keras, Tensorflow, Spark, Airflow, Postgres, Flask, etcd
+  \item \textit{Frameworks}: Spark, Airflow, Postgres, Flask, etcd, Keras, Tensorflow
   \item \textit{Infrastructure}: AWS (architecture, networking), Kubernetes, Docker
 \end{itemize}
 
@@ -148,15 +145,16 @@ Aug 2013 -- May 2014 \\                                          \vspace{-4mm}
 %%%%%%%                             Education                           %%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{EDUCATION}
-{\bf UNIVERSITY OF CALIFORNIA, BERKELEY,} Berkeley, CA \\
+{\bf University of California, Berkeley,} Berkeley, CA \\
 {\em M.S. in Industrial Engineering \& Operations Research }
 \hfill Dec 2014\\                                     \vspace{-4mm}
 \begin{itemize}
   \item Awarded UC Berkeley Graduate Fellowship
+  \item    \href{http://ieeexplore.ieee.org/abstract/document/6899376/}{Published research results in IEEE CASE 2014 Conference}
 \end{itemize}
 \vspace{-1mm}
 
-{\bf RICE UNIVERSITY,} Houston, TX \\
+{\bf Rice University,} Houston, TX \\
 {\em B.A. in Computational and Applied Mathematics (CAAM)}
 \hfill May 2013\\                                     \vspace{-4mm}
 \begin{itemize}                                         \itemsep1pt
